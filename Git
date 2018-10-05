@@ -1,9 +1,18 @@
-My git commands
-
+Basic Commands
+	git add .
+	git add <name_file>
+	 	
+	git commit -m "<message>"
+	 
+	git push
+	 
+	git pull
+			  
+	git diff (workarea index)
+	git diff --cached (index  repository)	 
 
 Create a new branch:
 	git checkout -b <feature_branch_name>
-Edit, add and commit your files.
 
 Push your branch to the remote repository:
 	git push -u origin <feature_branch_nam>
@@ -13,13 +22,12 @@ Delete remote branch
 
 Delete local branch
 	 git branch -d <name_branch> 
-	 git branch -D <name_branch> 
+	 git branch -D <name_branch> (Force)
 	 
 Remove file from index
 	git rm --cached <filename>
 
-Remove file from index
-
+Remove file
 	git rm -f <filename>
 	 
 Reset stages
@@ -34,35 +42,16 @@ Reset stages
 	
 	git reset --mixed (repository to index) 
 	
-historical commits
+All commits
 
-		git log (to exit press q)
+	git log (to exit press q)
 		
 		
 push local to remote	
 	git push origin <localbranch>:<remoteBranch>
 		
-	
-Basic Commands
-	git add .
-	git add <name_file>
-	 
-	
-	git commit -m "<message>"
-	 
-	git push
-	 
-	git pull
-	 
-	git log 
-	  
-	git diff (workarea index)
-	git diff --cached (index  repository)	 
-	 
+merge
+	git merge <name_branch> <name_branch> 
 
-	git merge
-	git rebase
-
-	
 
 	
