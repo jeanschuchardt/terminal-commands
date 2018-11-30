@@ -51,7 +51,16 @@ push local to remote
 	git push origin <localbranch>:<remoteBranch>
 		
 merge
-	git merge <name_branch> <name_branch> 
+	--git merge <name_branch> <other name_branch> 
+	git merge <other name_branch> 
+	
+rebase 
+	on currente branch
+	 
+		git rebase <other branch> (the chenges will apply to current branche)
 
+	in case of conflict -correct conflicts -
+		git add . (to add the changes on index)
+		git rebase --continue  (to continue the process of rebase )
 
 	
