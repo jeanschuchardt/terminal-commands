@@ -13,9 +13,8 @@ Basic Commands
 
 Create a new branch:
 	git checkout -b <feature_branch_name>
-
 Push your branch to the remote repository:
-	git push -u origin <feature_branch_nam>
+	git push -u origin <feature_branch_name>
 
 Delete remote branch
 	 git push origin --delete <name_branch_remote>
@@ -47,8 +46,8 @@ All commits
 	git log (to exit press q)
 		
 		
-push local to remote	
-	git push origin <localbranch>:<remoteBranch>
+--push local to remote	
+--git push origin <localbranch>:<remoteBranch>
 		
 merge
 	--git merge <name_branch> <other name_branch> 
