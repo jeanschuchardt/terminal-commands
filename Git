@@ -39,7 +39,17 @@ Reset stages
 
 	git reset --hard (repository to workarea)
 	
+	
+	undo the lest commit to working area
+	git reset --mixed HEAD
+	
+	undo the itens on index area to working area (directory)
 	git reset --mixed (repository to index) 
+	
+	undo the lest commit to index area
+	git reset --soft HEAD^ 
+	
+	
 	
 All commits
 
@@ -51,6 +61,7 @@ All commits
 		
 merge
 	--git merge <name_branch> <other name_branch> 
+	
 	git merge <other name_branch> 
 	
 rebase 
