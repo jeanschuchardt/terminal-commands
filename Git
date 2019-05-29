@@ -73,4 +73,6 @@ rebase
 		git add . (to add the changes on index)
 		git rebase --continue  (to continue the process of rebase )
 
-	
+delete files after change git ignore	
+git rm -r --cached .
+
