@@ -74,7 +74,8 @@ rebase
 		git rebase --continue  (to continue the process of rebase )
 
 delete files after change git ignore	
-git rm -r --cached .
-git add --all
-git commit -m "<ss>"
+	git rm -r --cached .
+	git add --all
+	git commit -m "<ss>"
 
+git clean -fxd
