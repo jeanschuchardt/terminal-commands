@@ -79,3 +79,6 @@ delete files after change git ignore
 	git commit -m "<ss>"
 
 git clean -fxd
+
+remove branchs deleted from remote
+git fetch --prune
