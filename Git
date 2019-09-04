@@ -82,3 +82,12 @@ git clean -fxd
 
 remove branchs deleted from remote
 git fetch --prune
+
+
+
+ git branch | grep -v '^*' | xargs git branch -D
+ 
+ 
+ git log --graph --oneline --decorate --all
+ 
+ git log --graph --pretty=oneline --abbrev-commit
