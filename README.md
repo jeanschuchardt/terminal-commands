@@ -111,4 +111,5 @@ git branch | grep -v '^*' | xargs git branch -D
 -------------------------------------------------------------
 diff	
 	git diff (workarea index)
-	git diff --cached (index  repository)
+	git diff --cached (index  repository)	
+	git diff --cached (index  repository)	
