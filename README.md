@@ -1,52 +1,65 @@
-# gitCommands
-<remote> by default is origin but you can have others remotes
+# git Commands
+Notes: < remote > by default is origin but you can have others remotes
 
-Basic Commands
+## Basic Commands
 
-Add all files  to the index
+Add all files  to the index:
+
 	git add .
 	git add --all
 	
-add one file to the index
+add one file to the index:
+
 	git add <name_file>
 
-commit added files on the local 	
+commit added files on the local:
+
 	git commit -m "<message>"
 
 Create a new branch on the local:
 	git checkout -b <feature_branch_name>
 	
-publish the local branch to remote (if the branch alredy exist on  the remote)
+publish the local branch to remote:
+(if the branch alredy exist on  the remote)
+
 	git push
 
 Push a new branch to the remote repository:
+
 	git push -u <remote> <feature_branch_name>
 
 
-push Branch to Another Branch
+push Branch to Another Branch:
+
 	git push <remote> <local_branch>:<remote_name>
 
-Get the changes from remote	
+Get the changes from remote:
+
 	git pull	
 -------------------------------------------------------------
 
-Delete remote branch
+Delete remote branch:
+
 	 git push <remote> --delete <name_branch_remote>
 
-Delete local branch
+Delete local branch:
+
 	 git branch -d <name_branch> 
 	 git branch -D <name_branch> (Force)
 	 
 -------------------------------------------------------------
-Remove file from index
+Remove file from index:
+
 	git rm --cached <filename>
 
-Remove file (delete file)
+Remove file (delete file):
+
 	git rm -f <filename>
 
 -------------------------------------------------------------
 
-see the log/histories 
+see the log/histories:
+
 	git log --graph --oneline --decorate --all
  
 	git log --graph --pretty=oneline --abbrev-commit
@@ -54,7 +67,7 @@ see the log/histories
 	git log (to exit press q)	
 	
 -------------------------------------------------------------	 
-Reset stages
+Reset stages:
 	
 	git reset --hard HEAD <branch> 
 	
@@ -64,25 +77,31 @@ Reset stages
 
 	git reset --hard (repository to workarea)
 	
-	
-	undo the lest commit to working area
+more examples:
+
+undo the lest commit to working area:
+
 	git reset --mixed HEAD
 	
-	undo the itens on index area to working area (directory)
+undo the itens on index area to working area (directory):
+
 	git reset --mixed (repository to index) 
 	
-	undo the lest commit to index area
+undo the lest commit to index area:
+
 	git reset --soft HEAD^ 
 	
 -------------------------------------------------------------
 		
-merge
+merge:
+
 	git merge <name_branch> <other name_branch> 
 	
 	git merge <other name_branch> 
 	
 -------------------------------------------------------------
-rebase 
+rebase:
+
 	on currente branch
 	 
 		git rebase <other branch> (the chenges will apply to current branche)
@@ -92,24 +111,27 @@ rebase
 		git rebase --continue  (to continue the process of rebase )
 
 -------------------------------------------------------------
-delete files after change git ignore	
+delete files after change git ignore:
+
 	git rm -r --cached .
 	git add --all
 	git commit -m "<message>"
 
 -------------------------------------------------------------
-git clean -fxd
+
+	git clean -fxd
 
 -------------------------------------------------------------
-remove branchs deleted from remote
-git fetch --prune
+remove branchs deleted from remote:
+
+	git fetch --prune
 
 -------------------------------------------------------------
-git branch | grep -v '^*' | xargs git branch -D
-
+	git branch | grep -v '^*' | xargs git branch -D
 
 -------------------------------------------------------------
-diff	
+diff:
+
 	git diff (workarea index)
 	git diff --cached (index  repository)	
 	git diff --cached (index  repository)	
