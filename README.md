@@ -1,4 +1,5 @@
 # gitCommands
+<remote> by default is origin but you can have others remotes
 
 Basic Commands
 
@@ -19,18 +20,18 @@ publish the local branch to remote (if the branch alredy exist on  the remote)
 	git push
 
 Push a new branch to the remote repository:
-	git push -u origin <feature_branch_name>
+	git push -u <remote> <feature_branch_name>
 
-push local to remote	
-	git push origin <localbranch>:<remoteBranch>
 
+push Branch to Another Branch
+	git push <remote> <local_branch>:<remote_name>
 
 Get the changes from remote	
 	git pull	
 -------------------------------------------------------------
 
 Delete remote branch
-	 git push origin --delete <name_branch_remote>
+	 git push <remote> --delete <name_branch_remote>
 
 Delete local branch
 	 git branch -d <name_branch> 
@@ -105,6 +106,13 @@ git fetch --prune
 git branch | grep -v '^*' | xargs git branch -D
 
 
+ADS
+ads
+ASD
+
+sd
+DS
+das
 
 
 
