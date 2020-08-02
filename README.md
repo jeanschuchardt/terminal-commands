@@ -75,12 +75,9 @@ Reset stages
 	git reset --soft HEAD^ 
 	
 -------------------------------------------------------------
-
-		
-
 		
 merge
-	--git merge <name_branch> <other name_branch> 
+	git merge <name_branch> <other name_branch> 
 	
 	git merge <other name_branch> 
 	
@@ -96,23 +93,15 @@ rebase
 delete files after change git ignore	
 	git rm -r --cached .
 	git add --all
-	git commit -m "<ss>"
+	git commit -m "<message>"
 
 git clean -fxd
 
 remove branchs deleted from remote
 git fetch --prune
 
+
 git branch | grep -v '^*' | xargs git branch -D
-
-
-ADS
-ads
-ASD
-
-sd
-DS
-das
 
 
 
