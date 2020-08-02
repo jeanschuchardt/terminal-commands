@@ -59,7 +59,7 @@ All commits
 --push local to remote	
 --git push origin <localbranch>:<remoteBranch>
 		
-merge
+mergeSDsdasdASDads
 	--git merge <name_branch> <other name_branch> 
 	
 	git merge <other name_branch> 
@@ -68,7 +68,7 @@ rebase
 	on currente branch
 	 
 		git rebase <other branch> (the chenges will apply to current branche)
-
+ASDasd
 	in case of conflict -correct conflicts -
 		git add . (to add the changes on index)
 		git rebase --continue  (to continue the process of rebase )
@@ -85,7 +85,7 @@ git fetch --prune
 
 
 
- git branch | grep -v '^*' | xargs git branch -D
+ git branch | grepasdasdasdasd -v '^*' | xargs git branch -D
  
  
  git log --graph --oneline --decorate --all
