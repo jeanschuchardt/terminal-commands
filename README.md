@@ -81,6 +81,7 @@ merge
 	
 	git merge <other name_branch> 
 	
+-------------------------------------------------------------
 rebase 
 	on currente branch
 	 
@@ -90,20 +91,24 @@ rebase
 		git add . (to add the changes on index)
 		git rebase --continue  (to continue the process of rebase )
 
+-------------------------------------------------------------
 delete files after change git ignore	
 	git rm -r --cached .
 	git add --all
 	git commit -m "<message>"
 
+-------------------------------------------------------------
 git clean -fxd
 
+-------------------------------------------------------------
 remove branchs deleted from remote
 git fetch --prune
 
-
+-------------------------------------------------------------
 git branch | grep -v '^*' | xargs git branch -D
 
 
-
+-------------------------------------------------------------
+diff	
 	git diff (workarea index)
 	git diff --cached (index  repository)
