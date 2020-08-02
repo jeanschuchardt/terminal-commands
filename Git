@@ -91,3 +91,10 @@ git fetch --prune
  git log --graph --oneline --decorate --all
  
  git log --graph --pretty=oneline --abbrev-commit
+
+
+
+
+
+
+
