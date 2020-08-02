@@ -1,4 +1,5 @@
 # gitCommands
+<remote> by default is origin but you can have others remotes
 
 Basic Commands
 
@@ -19,18 +20,18 @@ publish the local branch to remote (if the branch alredy exist on  the remote)
 	git push
 
 Push a new branch to the remote repository:
-	git push -u origin <feature_branch_name>
+	git push -u <remote> <feature_branch_name>
 
-push local to remote	
-	git push origin <localbranch>:<remoteBranch>
 
+push Branch to Another Branch
+	git push <remote> <local_branch>:<remote_name>
 
 Get the changes from remote	
 	git pull	
 -------------------------------------------------------------
 
 Delete remote branch
-	 git push origin --delete <name_branch_remote>
+	 git push <remote> --delete <name_branch_remote>
 
 Delete local branch
 	 git branch -d <name_branch> 
@@ -74,15 +75,13 @@ Reset stages
 	git reset --soft HEAD^ 
 	
 -------------------------------------------------------------
-
-		
-
 		
 merge
-	--git merge <name_branch> <other name_branch> 
+	git merge <name_branch> <other name_branch> 
 	
 	git merge <other name_branch> 
 	
+-------------------------------------------------------------
 rebase 
 	on currente branch
 	 
@@ -92,21 +91,25 @@ rebase
 		git add . (to add the changes on index)
 		git rebase --continue  (to continue the process of rebase )
 
+-------------------------------------------------------------
 delete files after change git ignore	
 	git rm -r --cached .
 	git add --all
-	git commit -m "<ss>"
+	git commit -m "<message>"
 
+-------------------------------------------------------------
 git clean -fxd
 
+-------------------------------------------------------------
 remove branchs deleted from remote
 git fetch --prune
 
+-------------------------------------------------------------
 git branch | grep -v '^*' | xargs git branch -D
 
 
-
-
-
+-------------------------------------------------------------
+diff	
 	git diff (workarea index)
-	git diff --cached (index  repository)
+	git diff --cached (index  repository)	
+	git diff --cached (index  repository)	
