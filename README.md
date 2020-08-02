@@ -102,9 +102,15 @@ git clean -fxd
 remove branchs deleted from remote
 git fetch --prune
 
+
 git branch | grep -v '^*' | xargs git branch -D
 
-
+asdfasdf
+asdf
+asdf
+a
+sdf
+adsf
 
 
 
