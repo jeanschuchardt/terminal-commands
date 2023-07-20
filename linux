@@ -1,0 +1,20 @@
+chmod
+	recursivo para subpastas
+		chmod -R 777 .
+	para em um arquivo
+		chmod 777 [file_name]
+
+add user to sudo
+	usermod -aG sudo [username]
+
+open terminal folder path onto explorer
+	nautilus .
+
+show file 
+	cat <file-name>
+
+
+
+
+
+
