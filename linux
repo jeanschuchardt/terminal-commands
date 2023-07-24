@@ -14,6 +14,12 @@ show file
 	cat <file-name>
 
 
+install java
+
+sudo apt-get update
+sudo apt search jdk-17
+sudo apt-get install openjdk-17-source
+
 
 
 
