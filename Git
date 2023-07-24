@@ -100,7 +100,8 @@ git fetch --prune
 
 
 
-
+clean untreack files
+git clean -d -x -f
 
 
 
