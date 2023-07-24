@@ -23,4 +23,5 @@ sudo apt-get install openjdk-17-source
 
 
 
-
+delete folder not empty recusivo
+rm -rf lampp
