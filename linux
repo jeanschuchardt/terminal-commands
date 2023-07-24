@@ -29,7 +29,5 @@ sudo apt-get purge icedtea-* openjdk-*
 sudo dpkg --list | grep -i jdk
 
 
----
-
 delete folder not empty recusivo
 rm -rf lampp
