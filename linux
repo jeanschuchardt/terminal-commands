@@ -13,6 +13,7 @@ open terminal folder path onto explorer
 show file 
 	cat <file-name>
 
+#https://www.edivaldobrito.com.br/openjdk-8-no-ubuntu-19-04/
 
 install java
 
@@ -20,8 +21,15 @@ sudo apt-get update
 sudo apt search jdk-17
 sudo apt-get install openjdk-17-source
 
+#https://askubuntu.com/questions/84483/how-to-completely-uninstall-java
+
+sudo dpkg --list | grep -i jdk
+sudo apt-get purge openjdk*
+sudo apt-get purge icedtea-* openjdk-*
+sudo dpkg --list | grep -i jdk
 
 
+---
 
 delete folder not empty recusivo
 rm -rf lampp
