@@ -34,3 +34,7 @@ rm -rf lampp
 
 nautilus .
 
+
+ver cpu hardware 
+lscpu
+

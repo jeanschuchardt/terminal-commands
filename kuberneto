@@ -7,42 +7,26 @@ kubectl config use-context kubernetes-prod-gt
 kubectl config use-context kubernetes-prod-tb
 
 
- 
-
 kubectl get pods -n [name-space]
 
-
- 
 
 kubectl get pods --show-labels -n [name-space]
 
 
- 
-
 kubectl get cronjob --show-labels -n [name-space]
 
 
- 
-
 kubectl logs -f nome_do_pod -n [name-space]
-
-
  
 
 kubectl logs -f nome_do_pod -n [name-space] | grep 'pesquisar_por_algo'
-
-
  
 
 kubectl describe quota -n [name-space]
-
-
  
 
 kubectl get cronjob <nome_cron_job> -o yaml -n [name-space]
 
-
- 
 
 kubectl describe pods [pod] -n [name-space]
 
