@@ -105,3 +105,19 @@ git clean -d -x -f
 
 git pull --no-ff origin developer
 
+
+
+
+ssh
+Execute o seguinte comando, substituindo seu_email@example.com pelo seu endereço de e-mail do GitHub:
+ssh-keygen -t rsa -b 4096 -C "seu_email@example.com"
+
+Inicie o agente SSH, se ainda não estiver em execução, executando:
+eval "$(ssh-agent -s)"
+
+Adicione sua chave SSH ao agente SSH:
+ssh-add ~/.ssh/id_rsa
+
+Copie o conteúdo da sua chave SSH pública para a área de transferência. Você pode fazer isso com o seguinte comando:
+cat ~/.ssh/id_rsa.pub
+
